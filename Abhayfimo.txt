@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EBD728"
+    tools:context=".MainActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:padding="20dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Matrix Multiplication"
+            android:textSize="20dp"
+            android:textColor="#0D0C0C"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Name : Abhay Rana"
+            android:textSize="20sp"
+            android:textColor="#0D0C0C"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Enrollment :2303051240005 "
+            android:textSize="20sp"
+            android:textColor="#0D0C0C"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:id="@+id/textMatrix1"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:id="@+id/textMatrix2"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="Result :"
+                android:textSize="20sp"
+                android:textcolor="#0D0C0C"/>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="20dp"
+
+                android:gravity="center"
+                android:id="@+id/textMatrix3"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/dimLayout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Dimention for Matrix One"
+                    android:textSize="20sp"
+                    android:textColor="#185"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="Row          :"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:inputType="number"
+                        android:id="@+id/inputRaw"
+                        android:hint="Enter value "
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="Column    :"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:inputType="number"
+                        android:id="@+id/inputColumn"
+                        android:hint="Enter value "
+                        />
+
+
+                </LinearLayout>
+
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Enter Value"
+                    android:id="@+id/Dim_inputButton"
+                    android:textColor="#E60B0B"/>
+
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Clear"
+                android:id="@+id/clear"
+                android:visibility="gone"
+                />
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/elimentInputLayout"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="Elements  :"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:inputType="number"
+                        android:id="@+id/elementInput"
+                        android:hint="Enter value "
+                        />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Enter Value"
+                    android:id="@+id/elementInputButton"
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="70dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Matrix"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:id="@+id/matrix"
+            android:textColor="#ffA500"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Prime"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:id="@+id/prime"
+            "/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Sort"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:id="@+id/sort"
+            android:textColor="#1AD521"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+java------- Abhay Rana
+
+
+
+
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity {
+
+
+    Button prime,sort;
+    LinearLayout dimLayout, elementLayout;
+
+    TextView tv_mat1,tv_mat2, tv_mat3;
+
+    String  tv_result = "";
+
+    EditText raw, column,elements;
+
+    Button dimButton, elementButton,clear;
+
+    int rawValue;
+    int columnValue;
+
+    int[][] matrix1,matrix2,matrix3;
+
+    int[] temp;
+
+    int len;
+
+    int count = 0;
+
+    boolean mat = true;
+
+
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        prime = findViewById(R.id.prime);
+        sort = findViewById(R.id.sort);
+
+        dimLayout = findViewById(R.id.dimLayout);
+        elementLayout = findViewById(R.id.elimentInputLayout);
+
+        raw = findViewById(R.id.inputRaw);
+        column = findViewById(R.id.inputColumn);
+        elements = findViewById(R.id.elementInput);
+
+        dimButton =findViewById(R.id.Dim_inputButton);
+        elementButton = findViewById(R.id.elementInputButton);
+        clear = findViewById(R.id.clear);
+        tv_mat1 = findViewById(R.id.textMatrix1);
+        tv_mat2 = findViewById(R.id.textMatrix2);
+        tv_mat3 = findViewById(R.id.textMatrix3);
+
+
+
+
+        dimButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(raw.getText().toString().trim().length() > 0 && column.getText().toString().trim().length() > 0) {
+                    rawValue = Integer.parseInt(raw.getText().toString());
+                    columnValue = Integer.parseInt(column.getText().toString());
+                    dimLayout.setVisibility(View.GONE);
+                    elementLayout.setVisibility(View.VISIBLE);
+
+                    len = rawValue * columnValue;
+                    temp = new int[len];
+                    count = 0;
+                    raw.setText("");
+                    column.setText("");
+
+                }
+
+            }
+        });
+
+
+        elementButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(elements.getText().toString().trim().length() > 0){
+                    int a = Integer.parseInt(elements.getText().toString());
+                    temp[count] = a;
+                    count++;
+                    elements.setText("");
+                    elements.setHint("enter next number");
+
+                    if(count == len){
+                        dimLayout.setVisibility(View.VISIBLE);
+                        elementLayout.setVisibility(View.GONE);
+                        createMatrix();
+
+                    }
+                }
+            }
+        });
+
+        clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mat = true;
+                dimLayout.setVisibility(View.VISIBLE);
+                elementLayout.setVisibility(View.GONE);
+                clear.setVisibility(View.GONE);
+                tv_mat1.setText("");
+                tv_mat2.setText("");
+                tv_mat3.setText("");
+
+            }
+        });
+
+
+        Intent primeNumber = new Intent(this,PrimeActivity.class);
+        Intent sortName = new Intent(this,SortingList.class);
+
+        prime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(primeNumber);
+                finish();
+
+            }
+        });
+
+        sort.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(sortName);
+                finish();
+
+            }
+        });
+
+    }
+
+
+
+
+
+
+
+    void createMatrix( ){
+
+        if (mat){
+            matrix1 = new int[rawValue][columnValue];
+        } else {
+            matrix2 = new int[rawValue][columnValue];
+        }
+
+        int a = 0;
+
+        for(int i = 0 ; i < rawValue; i++){
+            for(int j = 0 ; j<columnValue; j++){
+
+                if(a<=len){
+                    if (mat){
+                        matrix1[i][j] = temp[a];
+                        a++;
+
+                    } else {
+                        matrix2[i][j] = temp[a];
+                        a++;
+                    }
+
+
+                }
+
+            }
+        }
+
+        if(mat){
+            tv_result = "";
+            printMatrix(matrix1,tv_mat1);
+            mat = false;
+        } else {
+            tv_result = "";
+            printMatrix(matrix2,tv_mat2);
+
+            tv_result = "";
+            printMatrix(matrixMultiplication(matrix1,matrix2),tv_mat3);
+            clear.setVisibility(View.VISIBLE);
+            dimLayout.setVisibility(View.GONE);
+
+
+        }
+
+
+
+    }
+
+
+
+
+
+
+    public int[][] matrixMultiplication(int[][] a, int[][] b  ){
+
+        int[][] c = new int [a.length] [b[0].length] ;
+
+        if (a[0].length != b.length){
+            int[][] d = new int[0][0];
+
+            tv_mat3.setText("the raw and column of two matrix is not equal");
+            return d;
+        }
+
+        for (int i = 0; i< a.length ; i++){
+
+            for(int j = 0 ; j < b[0].length; j++){
+
+                for (int k = 0 ; k < b.length ; k++){
+
+                    c[i][j] += a[i][k] * b[k][j];
+
+                }
+            }
+        }
+        return c;
+    }
+
+
+    public void printMatrix(int[][] mat,TextView tv){
+
+
+        if(mat.length >0) {
+            tv_result += "[   \n";
+            for (int[] i : mat) {
+
+                for (int j : i) {
+
+                    tv_result += j + " ";
+                }
+                tv_result += "\n";
+            }
+            tv_result += "   ]";
+
+            tv.setText(tv_result);
+
+        }
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
